@@ -1,0 +1,46 @@
+body {
+    color: white;
+    text-align: center;
+    background-image: url("../img/background-dark.jpg");
+    -webkit-transition: background-image 0.5s ease-in-out; 
+    transition: background-image 0.5s ease-in-out;
+}
+
+h1 {
+    padding: 2rem;
+    padding-bottom: 2rem;
+}
+
+.media-display-none {
+    display: none;
+}
+
+#img-sound {
+    width: 50px;
+    height: 40px;
+}
+
+#reponse, #lettres {
+    margin: 2rem;
+    padding-right: 2rem;
+}
+
+#reponse li, #lettres li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+#btn-reco:target {
+    -webkit-transition: background-image 0.5s ease-in-out; 
+    transition: background-image 0.5s ease-in-out;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+
