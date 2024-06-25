@@ -49,6 +49,8 @@ var mots = [
     "VALSE"
 ];
 
+var regex = /^[A-Za-z]$/;
+
 var lettres = [];
 var mot = "";
 var motMapping = [];
@@ -77,7 +79,9 @@ var init = () => {
     
     document.addEventListener("keydown", ({keyCode}) => {
         var lettre = String.fromCharCode(keyCode);
-        verifLettre(lettre);
+        if(regex.test(lettre)){
+            verifLettre(lettre);
+        }
     });
 };
 
