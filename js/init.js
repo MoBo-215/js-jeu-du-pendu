@@ -107,7 +107,7 @@ var verifLettre = (lettre) => {
 };
 
 var perdu = () => {
-    elements.lettres.innerHTML = '<h2 class="text-danger ps-3">Vous êtes mort (et nul) <(-_-)> </h2>';
+    elements.lettres.innerHTML = '<h2 class="text-danger nosifer-regular ps-3">Vous êtes mort</h2><h2 class="text-danger"> (et nul) <(-_-)></h2>';
     setTimeout(() => {
         elements.audio.innerHTML = "";
         elements.erreurs.innerHTML = '<video controls autoplay width=400 id="saw_video"><source src="../img/saw_video.mp4" type="video/mp4" /></video>';
@@ -115,7 +115,7 @@ var perdu = () => {
         if (vid.requestFullscreen) {
             vid.requestFullscreen();
         }
-    }, 2000);
+    }, 1000);
 }
 
 var gagne = () => {
